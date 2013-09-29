@@ -1,0 +1,40 @@
+- content_for :title, "XD6 //Contact"
+.col-4
+    .panel.panel-primary
+        .panel-heading
+            Contact Details
+        E-Mail:&nbsp;
+        %a(href="mailto:dev@xd6.co")
+            contact@xd6.co
+        Github:&nbsp;
+        %a(href="https://github.com/XD6Code" target="_blank")
+            github/XD6Code
+.col-8
+    .panel.panel-primary
+        .panel-heading
+            Contact Us
+        %form.form-horizontal
+            .form-group
+                %label.col-2.control-label(for="inputEmailTo")
+                    To:
+                .col-10
+                    %p.form-control-static
+                        contact@xd6.co
+            .form-group
+                %label.col-2.control-label(for="inputEmailFrom")
+                    From:
+                .col-10
+                    %input#inputEmailFrom.form-control(type="text" placeholder="me@example.com")
+            .form-group
+                %label.col-2.control-label(for="inputSubject")
+                    Subject:
+                .col-10
+                    %input#inputSubject.form-control(type="text" placeholder="Subject")
+            .form-group
+                %label.col-2.control-label(for="inputPassword2")
+                    Inquiry:
+                .col-10
+                    %textarea#inputText.form-control
+            .form-group
+                .col-12
+                    %input.btn.btn-primary.pull-right(type="submit" value="Submit")
