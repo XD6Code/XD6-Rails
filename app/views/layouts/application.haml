@@ -17,12 +17,13 @@
                         }
                     %ul.nav.navbar-nav.pull-right
                         %li
-                            %a(href="/") Home
+                            = link_to "Home", "/", :class => action_name == "home" ? "active" : ""
                         %li
-                            %a(href="/about") About
+                            = link_to "About", "/about", :class => action_name == "about" ? "active" : ""
                         %li
-                            %a(href="/news") News
+                            = link_to "News", "/news", :class => action_name == "news" ? "active" : ""
                         %li
-                            %a(href="/contact") Contact
+                            = link_to "Contact", "/contact", :class => action_name == "contact" ? "active" : ""
+
         .row
             = yield

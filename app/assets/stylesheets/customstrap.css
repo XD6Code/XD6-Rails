@@ -1,5 +1,28 @@
 body {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
     background-color: #DDDDDD;
+}
+html {
+	overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: none;
+}
+::-webkit-scrollbar-track-piece{
+    background-color: #DDDDDD;
+}
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #373737;
 }
 .navbar {
     background-color: #373737;
@@ -16,7 +39,7 @@ body {
     color: #3f80cc;
     background-color: #222;
 }
-.navbar-nav>.active>a, .navbar-nav>.active>a:hover, .navbar-nav>.active>a:focus {
+.navbar-nav a.active, .navbar-nav a.active:hover, .navbar-nav a.active:focus {
     color: #3f80cc;
     background-color: #222;
     text-shadow: -1px 1px 2px #404040;
